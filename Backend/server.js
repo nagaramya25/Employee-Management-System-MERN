@@ -19,9 +19,10 @@ app.use(express.json());
 // Serve Uploaded Images
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
+
 // Routes
-app.use("/employees", require("./routes/employeeRoutes"));
-app.use("/auth", authRoutes);
+app.use("/api/employees", require("./routes/employeeRoutes"));
+app.use("/api/auth", authRoutes);
 
 // Default Route
 app.get("/", (req, res) => {

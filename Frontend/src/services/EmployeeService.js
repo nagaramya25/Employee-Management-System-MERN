@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/employees";
+const API_URL =
+  "https://employee-management-system-mern-bs3y.onrender.com/api/employees";
 
 // Function to get Authorization header
 const getAuthHeader = () => {
